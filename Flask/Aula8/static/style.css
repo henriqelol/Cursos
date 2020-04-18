@@ -1,0 +1,16 @@
+from flask import Flask
+
+app = Flask(__name__)
+
+
+@app.route("/")
+def index():
+    d = 3 / 0
+    return "teste"
+
+
+if __name__ == '__main__':
+    app.run(debug=True, port="3000")h1 {
+    text-align: center;
+    color: purple;
+}
